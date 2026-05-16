@@ -27,7 +27,30 @@ DCGAN fixes this with BatchNorm, strided convolutions,
 and a more balanced architecture → see DCGAN notebook
 
 ## Architecture
-[your architecture details]
+**Discriminator**
+- Input: 784 (28×28 flattened image)
+- Linear(784 → 512) → LeakyReLU(0.2)
+- Linear(512 → 256) → LeakyReLU(0.2)
+- Linear(256 → 128) → LeakyReLU(0.2)
+- Linear(128 → 1) → Sigmoid
+
+**Generator**
+- Input: z_dim = 128 (random noise vector)
+- Linear(128 → 256) → LeakyReLU(0.2)
+- Linear(256 → 512) → LeakyReLU(0.2)
+- Linear(512 → 784) → Tanh
+- Output reshaped to (1, 28, 28)
+
+Note: D has 3 hidden layers vs G's 2 — D had more capacity, 
+which contributed to D dominating training and mode collapse.
 
 ## Training
-[hyperparams]
+| Hyperparameter | Value |
+|---|---|
+| Epochs | 500 |
+| Batch size | 32 |
+| Noise dim (z) | 128 |
+| Learning rate | 0.0002 |
+| Optimizer | Adam (β1=0.5, β2=0.999) |
+| Loss function | BCELoss |
+| D steps per G step | 1:1 |

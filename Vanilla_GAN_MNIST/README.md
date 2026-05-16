@@ -12,7 +12,11 @@ G collapsed to generating only "1" across all 32 fixed noise outputs.
 D_loss dropped to ~0.09 while G_loss remained high (~2.9), 
 confirming D dominated and G stopped exploring.
 
-[insert GIF or side-by-side image of early vs collapsed output]
+**Early training (Step 2) — variety present**
+![Early output](assets/early_output.png)
+
+**Collapsed (Step 9) — mode collapse, all 1s**
+![Collapsed output](assets/collapsed_output.png)
 
 ## What I learned
 

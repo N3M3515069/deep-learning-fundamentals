@@ -10,7 +10,7 @@ Built as a direct follow-up to the Vanilla GAN implementation to address mode co
 
 ### Early training (Step 3) — transient mode collapse
 G initially collapsed to generating a single digit pattern. Unlike Vanilla GAN where this was permanent, DCGAN recovered within the first epoch due to BatchNorm stabilizing the adversarial balance.
-![Early collapse](assets/step3.png)
+![Early collapse](assets/Early collapse.png)
 
 ### Stable training (Step 24 onwards)
 By step 24, G was producing diverse, clearly readable digits across all 10 classes with no signs of collapse.

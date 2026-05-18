@@ -3,7 +3,7 @@
 Progressive PyTorch implementations built from scratch — every layer, loss function, and training loop written manually without high-level abstractions.
 
 ## Notebooks
-| Notebook | Description |
+| Notebook | Description | Status |
 |----------|-------------|
 | Vanilla_NN_MNIST | Feedforward neural network on MNIST, 95% test accuracy |
 | CNN_FashionMNIST | CNN on FashionMNIST, 88.7% test accuracy |

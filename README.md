@@ -1,4 +1,4 @@
-# deep-learning-fundamentals
+# dl-progression
 
 PyTorch deep learning notebooks built from scratch while learning core concepts.
 

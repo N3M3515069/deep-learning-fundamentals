@@ -1,6 +1,6 @@
 # dl-progression
 
-PyTorch deep learning notebooks built from scratch while learning core concepts.
+Progressive PyTorch implementations built from scratch — every layer, loss function, and training loop written manually without high-level abstractions.
 
 ## Notebooks
 | Notebook | Description |
